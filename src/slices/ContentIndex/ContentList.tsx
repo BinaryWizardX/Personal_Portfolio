@@ -150,7 +150,7 @@ function ContentList({items,
                     onMouseEnter={()=> onMouseenter(index)}
                     ref={(element)=>(itemsRef.current[index] = element)}
                     >
-                    <a href={`${item.data.meta_description}`} className='flex flex-col justify-between border-t border-t-slate-100 py-10 text-slate-200 md:flex-row'
+                    <a href={`${item.data.meta_description}`} target='_blank' className='flex flex-col justify-between border-t border-t-slate-100 py-10 text-slate-200 md:flex-row'
                     aria-label={item.data.title}>
                         <div className='flex flex-col'>
                             <span className='text-3xl font-bold'>{item.data.title}</span>
